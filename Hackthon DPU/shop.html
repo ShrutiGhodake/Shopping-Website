@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Glyphicon -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="shop_style.css" />
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <section id="header">
+        <a href="#"><img src="images/logo.jpg" alt="logo" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shop.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Topwear')">
+          Topwear
+        </button>
+        <button class="button-value" onclick="filterProduct('Bottomwear')">
+          Bottomwear
+        </button>
+        <button class="button-value" onclick="filterProduct('Jacket')">
+          Jacket
+        </button>
+        <button class="button-value" onclick="filterProduct('Watch')">
+          Watch
+        </button>
+        <button class="button-value" onclick="filterProduct('Shoes')">
+            Shoes
+        </button>&nbsp;&nbsp;
+        <i class="fas fa-filter"></i></div>
+        
+      
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/logo.jpg" height="60px" width="60px" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Shivajinagar, Pune</p>
+            <p><strong>Phone:</strong>(+91) 9766188736</p>
+            <p><strong>Hours:</strong>10:00 - 18:00, Mon-Sat</p>
+        </div>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    
+        <div class="col">
+            <h4>About us</h4>
+            <a href="#">About us</a>
+            <a href="#">Delievery information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & conditions</a>
+            <a href="#">Contact us</a>
+    
+        </div>
+    
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+    
+        </div>
+        
+    </footer>
+    <center class="wc">copyright 2023 Ecommerce website</center>
+  </body>
+</html>
