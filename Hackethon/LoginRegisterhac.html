@@ -1,0 +1,164 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="LoginRegisterStyleHack.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<!-- course section  -->
+<section class="login">
+    <script>
+        $(document).ready(function(){
+          $("form").submit(function(){
+            alert("Welcome to ShruNik Shopping Center!!");
+          });
+        });
+        </script>
+      </head>
+      <body>
+              <div class="form-box">
+                  <div class="button-box">
+                      <div id="btn"></div>
+                      <button type="button" class="toggle-btn" id="log" onclick="login()">Log In</button>
+                      <button type="button" class="toggle-btn" id="reg" onclick="register()">Register</button>
+                  </div>
+                  <div class="social-icons">
+                      <a href="https://www.facebook.com/"><img src="fb2.png"></a>
+                      <a href="https://www.instagram.com/"><img src="insta2.png"></a>
+                      <a href="https://twitter.com/"><img src="tt2.png"></a>
+                  </div>
+                  
+                  <!-- Login Form -->
+                  <form id="login" class="input-group" action="Enrolled.html">
+                      <div class="inp">
+                          <img src="user.png"><input type="text" id="email" class="input-field" placeholder="Username or Phone Number" style="width: 88%; border:none;" required="required">
+                      </div>
+                      <div class="inp">
+                     <img src="password.png"> <input type="password"  id="password" class="input-field" placeholder="Password" required="required" style="width: 88%; border:none;" >
+                    </div> 
+                        <br><input type="checkbox" onclick="myFunction()" >Show Password
+                       
+                      <br><br>
+                    
+
+                      <button type="submit" class="submit-btn">Log In</button>
+                  </form>
+      
+      
+                  <div class="other" id="other">
+                      <div class="instead">
+                          <h3>or</h3>
+                      </div>
+                      <button class="connect" onclick="google()">
+                          <img src="google.png"><span>Sign in with Google</span>
+                      </button>
+                  </div>
+                  
+                  <!-- Registration Form -->
+                  <form id="register" class="input-group">
+      
+                      <input type="text" class="input-field" placeholder="Full Name" required="required">
+                      <input type="email" class="input-field" placeholder="Email Address" required="required">
+                      <input type="phone" class="input-field" placeholder="Phone No." required="required">
+                      <input type="password" class="input-field" placeholder="Create Password" name="psame" required="required">
+                      <input type="password" class="input-field" placeholder="Confirm Password" name="psame" required="required">
+      
+                      
+                      <input type="checkbox" class="check-box" id="chkAgree" onclick="goFurther()">I agree to the Terms & Conditions
+                      <button type="submit" id="btnSubmit" class="submit-btn reg-btn">Register</button>
+                  </form>
+              </div>
+              <script type="text/javascript" src="loginScripthack.js"></script>
+    
+</section>
+    <script>
+         const menuBtn = document.querySelector(".menu-icon span");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+
+        
+         menuBtn.onclick = ()=>{
+           items.classList.add("active");
+           menuBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           menuBtn.classList.remove("hide");
+           cancelBtn.classList.remove("show");
+           form.classList.remove("active");
+           cancelBtn.style.color = "#ff3d00";
+         }
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           cancelBtn.classList.add("show");
+         }
+
+         function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="images/logo.jpg" height="60px" width="60px" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong>Shivajinagar, Pune</p>
+        <p><strong>Phone:</strong>(+91) 9766188736</p>
+        <p><strong>Hours:</strong>10:00 - 18:00, Mon-Sat</p>
+    </div>
+    <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About us</h4>
+        <a href="#">About us</a>
+        <a href="#">Delievery information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & conditions</a>
+        <a href="#">Contact us</a>
+
+    </div>
+
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign in</a>
+        <a href="#">View cart</a>
+        <a href="#">My wishlist</a>
+        <a href="#">Track my order</a>
+        <a href="#">Help</a>
+
+    </div>
+    
+</footer>
+<center class="wc">copyright 2023 Ecommerce website</center>
+
+</body>
+</html>
